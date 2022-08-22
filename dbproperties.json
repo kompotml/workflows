@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "database": "workflows",
+  "user": "workflows",
+  "password": "workflows"
+}

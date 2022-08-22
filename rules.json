@@ -1,0 +1,30 @@
+{
+  "operation" : {
+    "name": "op",
+    "function": "OperationNode("
+  },
+  "condition": {
+    "name": "cond",
+    "function": "ConditionNode("
+  },
+  "subroutine": {
+    "name": "sub",
+    "function": "SubroutineNode("
+  },
+  "io": {
+    "name": "io",
+    "function": "InputOutputNode(InputOutputNode.OUTPUT, "
+  },
+  "condno": {
+    "name": "condno",
+    "function": "skip"
+  },
+  "condyes": {
+    "name": "condyes",
+    "function": "skip"
+  },
+  "para": {
+    "name": "para",
+    "function": "OperationNode("
+  }
+}
