@@ -1,12 +1,14 @@
 import os
 
 import mysql.connector as mc
+from utilities import Utilities
 
 import pandas as pd
 
 
 class WorkflowsDB:
     def __init__(self, connection_data: dict):
+        self.utils = Utilities()
         self.dirname = os.path.dirname(__file__)
         self.connection = mc.connect(**connection_data)
         mc.connect()
@@ -92,7 +94,7 @@ class WorkflowsDB:
 
     def build_database(self):
         try:
-            with open(f"{self.dirname}\\config.sql") as file:
+            with open(f"{self.utils.filepath}\\config.sql") as file:
                 config_file = file.read()
             self.run(config_file)
         except Exception as ex:
